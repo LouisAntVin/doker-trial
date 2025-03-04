@@ -10,8 +10,8 @@ COPY . .
 # Install required Python packages
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the Flask app's port
-EXPOSE 8080
+# Expose the correct port for Render
+EXPOSE 10000
 
 # Run the application
 CMD ["python", "app.py"]
