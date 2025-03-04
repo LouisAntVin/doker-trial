@@ -87,4 +87,5 @@ def home():
     return render_template("index.html", inventory=inventory.to_dict(orient="records"), low_stock_items=low_stock_items)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000, debug=True)
+
